@@ -41,31 +41,35 @@ public class Problema3 {
 
         String promedioCualitativo = funcionPromedio(nota1, nota2, nota3,
                 nota4);
-        String mensaje = funcionMayusculas("El promedio de las notas es:" + nota1
-                + "," + nota2 + "," + nota3 + "," + nota4 + promedioCualitativo);
+        String mensaje = funcionMayusculas();
+        System.out.printf("El promedio de las notas es: "
+                + "%.2f%.2f%.2f%.2f y el promedio es: "
+                + "%s", nota1, nota2, nota3, nota4, 
+                promedioCualitativo);
 
         System.out.println(mensaje);
     }
 
     public static String funcionPromedio(double nota1, double nota2, double 
             nota3, double nota4) {
+        String cadena = "";
         double promedio = (nota1 + nota2 + nota3 + nota4) / 4;
         if (promedio >= 0 && promedio <= 5) {
-            return " regular";
+            cadena = " regular";
         } else {
             if (promedio > 5 && promedio <= 8) {
-                return " bueno";
+                cadena = " bueno";
             } else {
                 if (promedio > 8 && promedio <= 9) {
-                    return " Muy bueno";
+                    cadena = " Muy bueno";
                 } else {
                     if (promedio > 9 && promedio <= 10) {
-                        return " Sobresaliente";
+                        cadena = " Sobresaliente";
                     }
                 }
             }
         }
-        return null;
+        return cadena;
     }
     public static String funcionMayusculas(String mensaje){
         return mensaje.toUpperCase();
