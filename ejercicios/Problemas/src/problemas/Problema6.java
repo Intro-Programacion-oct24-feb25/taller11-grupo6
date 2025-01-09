@@ -39,8 +39,8 @@ public class Problema6 {
             sumaCuadrados = sumaCuadrados + Math.pow(arreglo[i] - media, 2);
         }
 
-        double varianza = sumaCuadrados / arreglo.length;
-        return Math.sqrt(varianza);
+        double variacion = sumaCuadrados / arreglo.length;
+        return Math.sqrt(variacion);
     }
 }
 
