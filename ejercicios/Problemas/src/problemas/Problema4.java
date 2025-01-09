@@ -16,9 +16,9 @@ public class Problema4 {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Ingrese el nombre del cliente: ");
+        System.out.print("Ingrese el nombre del cliente: \n");
         String nombreCliente = entrada.nextLine();
-        System.out.print("Ingrese la cédula del cliente: ");
+        System.out.print("Ingrese la cédula del cliente: \n");
         String cedulaCliente = entrada.nextLine();
 
         System.out.println("Elija una opción:");
@@ -35,18 +35,21 @@ public class Problema4 {
         }
     }
 
-    public static void calcularValorLuz(String nombreCliente, String cedulaCliente) {
+    public static void calcularValorLuz(String nombreCliente, 
+            String cedulaCliente) {
         Scanner entrada = new Scanner(System.in);
         System.out.print("Ingrese el valor del kilowatio: ");
         double valorKilowatio = entrada.nextDouble();
-        System.out.print("Ingrese el número de kilowatios consumidos en el mes: ");
+        System.out.print("Ingrese el número de kilowatios consumidos en "
+                + "el mes: ");
         double numeroKilowatios = entrada.nextDouble();
         double valorTotal = valorKilowatio * numeroKilowatios;
         System.out.printf("Cliente %s con cédula %s debe cancelar el valor de"
                 + " $%.2f\n", nombreCliente, cedulaCliente, valorTotal);
     }
 
-    public static void calcularPredio(String nombreCliente, String cedulaCliente) {
+    public static void calcularPredio(String nombreCliente, String 
+            cedulaCliente) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese el valor del inmueble: ");
         double valorInmueble = sc.nextDouble();
