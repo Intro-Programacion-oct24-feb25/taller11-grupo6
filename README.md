@@ -1,4 +1,6 @@
 # Taller 11 (Laboratorio)
+### Jorge Granda
+### Pablo Ordóñez
 ## Construcción de programas usando módulos y funciones
 
 ### Problema 01
