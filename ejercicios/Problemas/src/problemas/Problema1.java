@@ -20,7 +20,15 @@ public class Problema1 {
     }
 
     public static void imprimirDatos(int[][] datos) {
+        System.out.println("valores pares del arreglo");
+        for (int i = 0; i < datos.length; i++) {
+            for (int j = 0; j < datos[i].length; j++) {
+                if (datos[i][j] % 2 == 0) {
+                    System.out.println(datos[i][j]);
+                }
 
+            }
+        }
     }
-
 }
+    
